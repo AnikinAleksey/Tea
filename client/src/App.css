@@ -1,0 +1,183 @@
+/* Общие стили */
+body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Контейнеры */
+.container {
+  max-width: 100%;
+  font: 1.1em serif;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:burlywood;
+}
+.linknav {
+  font: 1em serif;
+  display: flex; 
+  gap: 50px; 
+  margin-bottom: 5px; 
+}
+
+.nav-link {
+  text-decoration:dotted; /* Убираем подчеркивание */
+  font-size: 24px; /* Размер шрифта */
+  color: #080347bd; /* Цвет текста (синий) */
+  transition: color 0.3s; /* Плавный переход цвета при наведении */
+}
+
+.nav-link:hover {
+  color: #d35400; /* Цвет текста при наведении (оранжевый) */
+}
+
+.tea-list {
+  display: flex; /* Используем флексбокс для контейнера */
+  flex-wrap: wrap; /* Позволяем элементам переноситься на следующую строку */
+  justify-content: space-between; /* Распределяем пространство между элементами */
+}
+.Alltea-list
+{
+  border-radius: 15px; /* Закругление углов */
+  border: 1px solid #ccc; /* Граница для визуализации */
+  padding: 20px; /* Отступы внутри компонента */
+  background-color: #a5ec93; /* Цвет фона */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
+  position: relative; /* Для абсолютного позиционирования кнопки */
+}
+.tea-item {
+  font: 1.2em serif;
+  flex: 0 1 calc(33.33% - 20px); /* Устанавливаем ширину элемента на 1/3 с учетом отступов */
+  margin-bottom: 20px; /* Отступ снизу для каждого элемента */
+  box-sizing: border-box; /* Учитываем отступы в ширине элемента */
+}
+
+
+.tea-item-search {
+  font: 1.2em serif;
+  display: flex;
+  flex-wrap: wrap; /* Позволяет элементам переноситься на следующую строку */
+  justify-content: space-between; /* Распределяет пространство между элементами */
+  background-color: #0ec761; /* Цвет фона для контейнера */
+  padding: 20px; /* Отступы внутри контейнера */
+  border-radius: 10px; /* Закругление углов контейнера */
+}
+.tea-card {
+  font: 1.2em serif;
+  flex: 0 1 calc(33.33% - 20px); /* Устанавливаем ширину элемента на 1/3 с учетом отступов */
+  margin-bottom: 20px; /* Отступ снизу для каждого элемента */
+  box-sizing: border-box; /* Учитываем отступы в ширине элемента */
+  background-color: #f9f9f9; /* Цвет фона для карточки */
+  border-radius: 15px; /* Закругление углов */
+}
+
+/* Заголовки */
+h1 {
+  font: 2em serif;
+  text-align: left;
+  color: #211592;
+}
+
+h2 {
+  color: #bd0707;
+}
+h3
+{
+  text-align: center;
+}
+
+/* Формы */
+form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Кнопки */
+button {
+  background-color: #afa84c; /* Зеленый цвет */
+  color: rgb(17, 2, 2);
+  padding: 10px 15px;
+  border-color: #555;
+  border: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #45a049; /* Более темный зеленый при наведении */
+}
+
+/* Чайные элементы */
+.tea-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0; /* Увеличено расстояние между элементами чая */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ссылки на чаи */
+.tea-item h3 {
+  font-size: 1.5em; /* Увеличен размер заголовка */
+  margin: 10px 0; /* Отступы вокруг заголовка */
+}
+
+/* Поле поиска */
+.search-bar {
+  margin: 20px 0; /* Увеличено расстояние вокруг поля поиска */
+}
+
+.search-bar input[type="text"] {
+  font-size: 1.2em; /* Увеличен размер шрифта в поле поиска */
+}
+
+/* Результаты поиска */
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.results div {
+  flex: 1 1 calc(33% - 10px);
+  margin: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .results div {
+      flex: 1 1 100%; /* На маленьких экранах элементы занимают 100% ширины */
+  }
+}
