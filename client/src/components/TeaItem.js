@@ -20,11 +20,11 @@ const TeaItem = ({ tea, onTeaUpdated, onTeaDeleted }) => {
     };
 
     const handleUpdate = () => {
-        setIsUpdating(true); // Показать форму обновления
+        setIsUpdating(true); 
     };
 
     const handleCancel = () => {
-        setIsUpdating(false); // Скрыть форму обновления
+        setIsUpdating(false); 
     };
 
     return (

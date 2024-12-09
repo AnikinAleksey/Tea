@@ -29,7 +29,7 @@ const UpdateTeaForm = ({ tea, onTeaUpdated, onCancel }) => {
         <form onSubmit={handleSubmit}>
             <h2>Обновить чай</h2>
             <label>
-                Вид: {/* Добавлено поле variety */}
+                Вид: {}
                 <input type="text" name="variety" value={formData.variety} onChange={handleChange} />
             </label>
             <label>

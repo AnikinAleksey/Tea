@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import AllTeas from './components/AllTeas';
 import SearchTeas from './components/SearchTeas';
-import './App.css'; // Убедитесь, что вы импортировали файл стилей
-
+import './App.css'; 
 const App = () => {
     return (
         <Router>

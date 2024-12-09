@@ -14,7 +14,7 @@ const AllTeas = () => {
                 setTeas(response.data);
             } catch (error) {
                 console.error('Ошибка при загрузке чаев:', error);
-                alert('Не удалось загрузить чаи. Попробуйте еще раз.'); // Сообщение об ошибке
+                alert('Не удалось загрузить чаи. Попробуйте еще раз.'); 
             }
         };
         fetchTeas();
@@ -22,7 +22,7 @@ const AllTeas = () => {
 
     const handleTeaAdded = (newTea) => {
         setTeas([...teas, newTea]);
-        setShowAddTeaForm(false); // Скрыть форму после добавления
+        setShowAddTeaForm(false); 
     };
 
     const handleTeaUpdated = (updatedTea) => {
@@ -34,7 +34,7 @@ const AllTeas = () => {
     };
 
     const toggleAddTeaForm = () => {
-        setShowAddTeaForm(prev => !prev); // Переключить видимость формы
+        setShowAddTeaForm(prev => !prev); 
     };
 
     return (
